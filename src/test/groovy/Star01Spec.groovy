@@ -21,10 +21,9 @@ class FuelCalculator {
 
 class Star01Spec extends Specification {
 	
-
 	FuelCalculator calc = new FuelCalculator()
 
-  @Unroll("A mass of #mass requires #fuel fuel")
+        @Unroll("A mass of #mass requires #fuel fuel")
 	void "find fuel requirement"() {
 		when:
 		def result = calc.fuelForMass(mass)
