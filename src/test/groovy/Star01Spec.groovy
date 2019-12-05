@@ -32,12 +32,12 @@ class Star01Spec extends Specification {
 		result == fuel
 
 		where:
-		mass		| fuel
-		12			| 2
-		13			| 2
-		14			| 2
-		1969		| 654
-		100756	| 33583
+		mass    || fuel
+		12      || 2
+		13      || 2
+		14      || 2
+		1969    || 654
+		100756  || 33583
 	}
 
 	void "collectFile can read and process every line of the file"() {
